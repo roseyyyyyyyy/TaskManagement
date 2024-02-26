@@ -1,0 +1,61 @@
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Form fields */
+  form div {
+    margin-bottom: 10px;
+  }
+  
+  /* Label styles */
+  label {
+    font-weight: bold;
+  }
+  
+  /* Input and textarea styles */
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  
+  /* Checkbox styles */
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  /* Button styles */
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Optional: Adjust the appearance of required fields */
+  input:required,
+  textarea:required {
+    border-color: #dc3545;
+  }
+  
+  /* Optional: Adjust appearance of completed checkbox label */
+  label[for="status"] {
+    font-weight: normal;
+  }

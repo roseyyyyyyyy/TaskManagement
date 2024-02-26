@@ -1,0 +1,14 @@
+<div *ngIf="tasks.length === 0"  style="color: #ff0000; font-weight: bold; font-size: 18px;">No tasks in the list.</div>
+<ul *ngIf="(tasks.length > 0  && !editClicked) || (tasks.length > 0  && saved && editClicked)">
+  <li *ngFor="let task of tasks; let i = index" (click)="selectedTask = task">
+    <span>{{ task.title }} - Due Date: {{ task.dueDate }}</span>
+    <span>Description : {{task.description}}</span>
+    <button (click)="markCompleted(i)" [disabled]="task.completed">Mark Completed</button>
+    <button (click)="deleteTask(i)">Delete</button>
+    <button (click)=" updateTask(task)">Edit</button>
+  </li>
+</ul>
+
+<!-- <app-task-details [task]="selectedTask"></app-task-details> -->
+<app-edit-task *ngIf="tasks.length > 0 && editClicked" [task]="selectedTask" (saveChanges)="onSaved($event)"></app-edit-task>
+

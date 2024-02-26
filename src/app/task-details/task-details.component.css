@@ -1,0 +1,27 @@
+.task-details {
+    border: 1px solid #ccc; 
+    padding: 20px;
+    margin-bottom: 20px; 
+    background-color: #f9f9f9; 
+  }
+  
+  .task-details h2 {
+    color: #333; /* Set the color of the task title */
+    margin-top: 0; /* Remove default top margin for the heading */
+  }
+  
+  .task-details p {
+    margin-bottom: 10px; /* Add some space between paragraphs */
+  }
+  
+  .task-details strong {
+    font-weight: bold; /* Make the strong elements bold */
+  }
+  
+  .task-details .completed {
+    color: green; /* Set color for completed status */
+  }
+  
+  .task-details .not-completed {
+    color: red; /* Set color for not completed status */
+  }

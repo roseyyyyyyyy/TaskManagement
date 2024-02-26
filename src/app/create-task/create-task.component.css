@@ -1,0 +1,63 @@
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  form div {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  textarea,
+  input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+
+  .error-message {
+    color: red; /* Set the color of the error message */
+    font-size: 14px; /* Set the font size of the error message */
+    margin-top: 5px; /* Add some space between the input field and the error message */
+  }
+  
+  /* Style for the input field when it's invalid */
+  .ng-invalid.ng-touched {
+    border-color: red; /* Change the border color of the input field to red when it's invalid and touched */
+  }
+  
+  /* Style for the input field when it's valid */
+  .ng-valid {
+    border-color: green; /* Change the border color of the input field to green when it's valid */
+  }
